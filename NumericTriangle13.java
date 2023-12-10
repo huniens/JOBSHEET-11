@@ -5,11 +5,11 @@ import java.util.Scanner;
  */
 public class NumericTriangle13 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input13 = new Scanner(System.in);
 
         // Input for N (minimum value is 3)
         System.out.print("Enter the value of N (minimum 3): ");
-        int N = scanner.nextInt();
+        int N = input13.nextInt();
 
         // Check if N is at least 3
         if (N < 3) {
@@ -33,6 +33,6 @@ public class NumericTriangle13 {
             System.out.println();
         }
 
-        scanner.close();
+        input13.close();
     }
 }

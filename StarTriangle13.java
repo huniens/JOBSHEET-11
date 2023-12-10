@@ -1,14 +1,14 @@
 import java.util.Scanner;
 /**
- * cobaaja
+ * StarTriangle13
  */
-public class cobaaja {
+public class StarTriangle13 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input13 = new Scanner(System.in);
 
         // Input for N (minimum value is 5)
         System.out.print("Enter the value of N (minimum 5): ");
-        int N = scanner.nextInt();
+        int N = input13.nextInt();
 
         // Check if N is at least 5
         if (N < 5) {
@@ -24,8 +24,6 @@ public class cobaaja {
             System.out.println();
         }
 
-        scanner.close();
+        input13.close();
     }
 }
-
-
