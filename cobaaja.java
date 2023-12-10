@@ -1,32 +1,29 @@
 import java.util.Scanner;
-import java.util.Random;
 
-public class Quiz13 {
-
+/**
+ * cobaaja
+ */
+public class cobaaja {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Random rand = new Random();
 
-        char menu = 'y';
-        do {
-            int number = rand.nextInt(10) + 1;
-            boolean success = false;
-            do {
-                System.out.print("Guess the number (1-10): ");
-                int answer = input.nextInt();
-                input.nextLine();
-                success = (answer == number);
-            } while (!success);
+        System.out.print("Enter the value of N (minimum N value is 3): ");
+        int N = input.nextInt();
 
-            System.out.print("Do you want to repeat the game? (Y/N): ");
-            menu = input.next().charAt(0);
-            input.nextLine();
-
-            // Tambahkan break jika pengguna memilih untuk tidak mengulangi permainan
-            if (menu != 'Y' && menu != 'y') {
-                break;
+        if (N < 5) {
+            System.out.println("Minimum N value is 5. Please enter a valid 3.");
+        } else {
+            // Print the numeric triangle
+            for (int i = 1; i <= N; i++) {
+                for (int j = N - i; j > 0; j--) {
+                    System.out.print(" ");
+                }
+                for(int k = 1; k <= i; k++) {
+                    System.out.println(k);
+                }
             }
+        }
 
-        } while (menu == 'Y' || menu == 'y');
+        input.close();
     }
 }
