@@ -17,10 +17,10 @@ public class NestedLoop13 {
             }
             System.out.println();
         }
-        for (int i = 0; i <temps.length; i++) {
+        for (int i = 0; i < temps.length; i++) {
             System.out.println("City: " + i);
-            for (int j = 0; j < temps[0].length; j++) {
-                System.out.println(temps[i][j] + " ");
+            for (double temperature : temps[i]) {
+                System.out.print(temperature + " ");
             }
             System.out.println();
         }
